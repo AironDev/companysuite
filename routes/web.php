@@ -106,7 +106,7 @@ use App\Http\Controllers\ProposalTemplateController;
 use App\Http\Controllers\EmployeeShiftChangeRequestController;
 use App\Http\Controllers\AwardController;
 use App\Http\Controllers\AppreciationController;
-use App\Http\Controllers\LeaveFileController;
+use App\Http\Controllers\LeaveFileController; 
 
 Route::group(['middleware' => 'auth', 'prefix' => 'account'], function () {
     Route::post('image/upload', [ImageController::class, 'store'])->name('image.store');
